@@ -15,6 +15,10 @@ html, body {
 /* Legend panel */
 #legend {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     bottom: 0;
     right: 0;
     width: 150px;              /* wider for case numbers */
@@ -27,28 +31,29 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     font-size: 11pt;
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+
 }
 
 /* Each legend row */
 .break {
-    position: relative;
-    margin: 0px;
-    padding: 0px;
+    display: flex;
+    align-items: center;
+    margin: 4px;
+
 }
 
 /* Legend dots */
 .dot {
-    display: inline-block;
-    margin-right: 5px;
+    width: 20px;             /* fixed size for all legend dots */
+    height: 20px;
     border-radius: 50%;
     opacity: 0.7;
-    vertical-align: middle;
+    margin-right: 10px; 
 }
 
 /* Legend labels */
 .dot-label {
-    font-style: italic;
-    vertical-align: middle;
+    font-style: normal;
 }
 
 /* Hyperlinks */

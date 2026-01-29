@@ -10,15 +10,21 @@ let map = new mapboxgl.Map({
 });
 
 // COVID case breaks
-const grades = [0, 1000, 5000, 20000],
-    colors = ['rgb(254,229,217)', 'rgb(252,146,114)', 'rgb(222,45,38)', 'rgb(165,15,21)'],
-    radii = [4, 6, 14, 24];
+const grades = [0, 500, 2000, 10000, 50000],
+      colors = [
+  '#d0ebf4', // very light blue
+  '#9ecae1', // light blue
+  '#69b3c2', // teal-ish
+  '#3b8c7a', // green-teal
+  '#2a5d34'  // deep green
+];
+      radii = [4, 8, 12, 18, 28];
 
 map.on('load', () => {
 
     map.addSource('covid', {
         type: 'geojson',
-        data: 'assets/covid_counts.geojson'
+        data: 'assets/covid_counts.json'
     });
     
 
@@ -34,7 +40,8 @@ map.on('load', () => {
                     [grades[0], radii[0]],
                     [grades[1], radii[1]],
                     [grades[2], radii[2]],
-                    [grades[3], radii[3]]
+                    [grades[3], radii[3]],
+                    [grades[4], radii[4]]
                 ]
             },
             // Circle color based on COVID cases
@@ -44,7 +51,8 @@ map.on('load', () => {
                     [grades[0], colors[0]],
                     [grades[1], colors[1]],
                     [grades[2], colors[2]],
-                    [grades[3], colors[3]]
+                    [grades[3], colors[3]],
+                    [grades[4], colors[4]]
                 ]
             },
             'circle-stroke-color': 'white',
