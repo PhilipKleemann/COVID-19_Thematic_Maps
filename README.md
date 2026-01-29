@@ -11,7 +11,7 @@ This project displays two thematic maps in which both maps are based off of COVI
 - Map 2 is a proportional symbols map of COVID-19 cases in 2020 using circles of varying sizes to demonstrate larger and smaller populations with COVID-19.
 
 ## Screenshots
-![Choropleth Map Screenshot](./img/choropleth_screenshot.png)  
+![Choropleth Map Screenshot](./img/choropleth_screenshot2.png)  
 
 ![Proportional Symbols Map Screenshot](./img/proportional_screenshot.png) 
 
