@@ -24,5 +24,8 @@ This project displays two thematic maps in which both maps are based off of COVI
 
 - Map 2 (Preoprtional Symbol Map): [Map 2](https://PhilipKleemann.github.io/COVID-19_Thematic_Maps/map2.html)
 
+## Data Sources
+- **COVID-19 Cases & Deaths (2020):** The New York Times ([NYT GitHub Repository](https://github.com/nytimes/covid-19-data))
+- **Population Data (2018):** ACS 5-year estimates, U.S. Census Bureau
 
 
