@@ -67,7 +67,7 @@
 
                 // create legend
                 const legend = document.getElementById('legend');
-                legend.innerHTML = "<b>Covid-19 Rates<br></b><br>";
+                legend.innerHTML = "<b>Covid-19 Rates (per 1,000 people)<br></b><br>";
 
 
                 layers.forEach((layer, i) => {
@@ -90,7 +90,7 @@
                     layers: ['covid_rates_layer']
                 });
                 document.getElementById('text-description').innerHTML = county.length ?
-                    `<h3>${county[0].properties.county}</h3><p><strong> Rate: <em>${county[0].properties.rates}</strong></em></p>` :
+                    `<h3>${county[0].properties.county}</h3><p><strong> Rate: <em>${county[0].properties.rates}</strong> per 1,000 people</em></p>` :
                     `<p>Hover over a county!</p>`;
             });
         }
