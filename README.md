@@ -12,6 +12,7 @@ This project displays two thematic maps in which both maps are based off of COVI
 
 ## Screenshots
 ![Choropleth Map Screenshot](./img/choropleth_screenshot.png)  
+
 ![Proportional Symbols Map Screenshot](./img/proportional_screenshot.png) 
 
 ## Libraries Used
@@ -21,7 +22,7 @@ This project displays two thematic maps in which both maps are based off of COVI
 ## Links
 - Map 1 (Choropleth Map): [Map 1](https://PhilipKleemann.github.io/COVID-19_Thematic_Maps/map1.html)
 
--Map 2 (Preoprtional Symbol Map): [Map 2](https://PhilipKleemann.github.io/COVID-19_Thematic_Maps/map2.html)
+- Map 2 (Preoprtional Symbol Map): [Map 2](https://PhilipKleemann.github.io/COVID-19_Thematic_Maps/map2.html)
 
 
 
